@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.danhsachmonhoc {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+   }
+.card {
+    background-color: rgb(207, 138, 202);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #74dad4;
+}
+h1 {
+    color: blue;
+    font-style: italic;
+    text-align: center;
+}
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+</style>
+
+<body>
+    <h1>Danh sách các môn học yêu thích</h1>
+    <div class="danhsachmonhoc">
+        <div class="card">
+            <h3>Hệ thống và công nghệ WEB</h3>
+        </div>
+        <div class="card">
+            <h3>Vật lý đại cương</h3>
+        </div>
+        <div class="card">
+            <h3>Toán cao cấp</h3>
+        </div>
+        <div class="card">
+            <h3>Triết học Mac-Lenin</h3>
+        </div>
+        <div class="card">
+            <h3>Pháp luật đại cương</h3>
+        </div>
+    </div>
+</body>
+</html>
