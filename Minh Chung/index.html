@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+/* Reset CSS cho tất cả các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đảm bảo trang có chiều cao đầy đủ */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Canh giữa toàn bộ nội dung của trang */
+.container {
+    display: flex;
+    justify-content: center;  /* Canh giữa theo chiều ngang */
+    align-items: center;      /* Canh giữa theo chiều dọc */
+    height: 100vh;            /* Chiều cao đầy đủ màn hình */
+    background-color: #f4f4f4;
+}
+
+/* Phần thông tin giới thiệu */
+.profile {
+    display: flex;
+    flex-direction: row;  /* Mặc định: ảnh và thông tin nằm ngang */
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+<style>
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;          
+    background-color: #f4f4f4;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 30px;
+}
+
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+.info h1 {
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+
+.profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+.avatar {
+        margin-bottom: 40px;  
+    }
+
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOEz6zerW9wQkdjfPCnT0mLABuv-zc6I0Wig&s" alt="Ảnh đại diện" class="avatar">
+            <div class="info">
+                <h1>Nguyễn Thị Phương Linh</h1>
+                <p>31/05/2006</p>
+                <p>Sđt: 0123456789</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
